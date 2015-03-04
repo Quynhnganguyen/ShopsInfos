@@ -4,7 +4,11 @@ class ShopsController < ApplicationController
   # GET /shops
   # GET /shops.json
   def index
-    @shops = Shop.all
+    if params[:search].present?
+      @shops = Shop.near(params[:search], 50, :order => :distance)
+    else
+      @shops = Shop.all
+    end
   end
 
   # GET /shops/1
