@@ -1,10 +1,8 @@
 #lib/tasks/import.rake
-require 'smarter_csv'
+require 'csv'
 namespace :import_csv do
   task :create_shops => :environment do
-    options = {}
-    SmarterCSV.process('shopmium.csv', options) do |chunk|
-    chunk.each do |row|
+  CSV.foreach('shopmium.csv', :headers => true) do |row|
       Shop.create!({
           :chain => row[0],
           :name => row[1],
@@ -17,6 +15,5 @@ namespace :import_csv do
           :country_code => row[8],
         })
     end
-  end
 end
 end

@@ -40,5 +40,5 @@ gem 'spring',        group: :development
 
 # For import/export csv file
 # gem 'postgres-copy'
-gem 'smarter_csv'
+# gem 'smarter_csv'
 
