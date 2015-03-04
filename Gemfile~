@@ -38,7 +38,3 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-# For import/export csv file
-# gem 'postgres-copy'
-gem 'smarter_csv'
-
