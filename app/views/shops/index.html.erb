@@ -3,7 +3,7 @@
 <%= link_to 'New Shop', new_shop_path %>
 
 <br>
-<p> Amount of shop:  <% @countShop.inspect.to_s %></p>
+
 <table>
   <thead>
     <tr>
@@ -24,9 +24,9 @@
         <td><%= shop.city %></td>
         <td><%= shop.zip %></td>
         <td><%= shop.phone %></td>
-        <td><%= link_to 'Show', shop %></td>
-        <td><%= link_to 'Edit', edit_shop_path(shop) %></td>
-        <td><%= link_to 'Destroy', shop, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show | ', shop %></td>
+        <td><%= link_to ' Edit | ', edit_shop_path(shop) %></td>
+        <td><%= link_to ' Destroy', shop, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

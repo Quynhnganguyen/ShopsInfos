@@ -45,3 +45,6 @@ gem 'spring',        group: :development
 # for interface
 gem 'bootstrap-sass', '~> 3.3.3'
 
+# for maps
+gem 'geocoder'
+
