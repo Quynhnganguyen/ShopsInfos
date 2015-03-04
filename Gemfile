@@ -42,3 +42,6 @@ gem 'spring',        group: :development
 # gem 'postgres-copy'
 # gem 'smarter_csv'
 
+# for interface
+gem 'bootstrap-sass', '~> 3.3.3'
+

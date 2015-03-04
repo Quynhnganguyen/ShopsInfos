@@ -5,6 +5,7 @@ class ShopsController < ApplicationController
   # GET /shops.json
   def index
     @shops = Shop.all
+    @countShop = Shop.count
   end
 
   # GET /shops/1
