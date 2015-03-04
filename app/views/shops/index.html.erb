@@ -3,6 +3,12 @@
 <%= link_to 'New Shop', new_shop_path %>
 
 <br>
+<br>
+  <p>
+    <h3>Search shops</h3>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search Near", :name => nil, method: :get %>
+  </p>
 
 <table>
   <thead>

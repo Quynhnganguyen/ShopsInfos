@@ -3,12 +3,12 @@ class CreateShops < ActiveRecord::Migration
     create_table :shops do |t|
       t.string :chain
       t.string :name
-      t.string :latitude
-      t.string :longitude
+      t.float :latitude
+      t.float :longitude
       t.string :address
       t.string :city
-      t.string :zip
-      t.string :phone
+      t.integer :zip
+      t.integer :phone
       t.string :country_code
 
       t.timestamps

@@ -11,8 +11,8 @@ namespace :import_csv do
           :address => row[4],
           :city => row[5],
           :zip => row[6],
-          :phone => row[7],
-          :country_code => row[8],
+          :phone => row[8],
+          :country_code => row[18],
         })
     end
 end
