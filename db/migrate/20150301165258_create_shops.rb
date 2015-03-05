@@ -10,8 +10,6 @@ class CreateShops < ActiveRecord::Migration
       t.integer :zip
       t.integer :phone
       t.string :country_code
-
-      t.timestamps
     end
   end
 end

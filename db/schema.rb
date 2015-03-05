@@ -17,17 +17,15 @@ ActiveRecord::Schema.define(version: 20150301165258) do
   enable_extension "plpgsql"
 
   create_table "shops", force: true do |t|
-    t.string   "chain"
-    t.string   "name"
-    t.string   "latitude"
-    t.string   "longitude"
-    t.string   "address"
-    t.string   "city"
-    t.string   "zip"
-    t.string   "phone"
-    t.string   "country_code"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string  "chain",        limit: 40
+    t.string  "name",         limit: 100
+    t.float   "latitude"
+    t.float   "longitude"
+    t.string  "address",      limit: 100
+    t.string  "city",         limit: 40
+    t.integer "zip"
+    t.integer "phone"
+    t.string  "country_code", limit: 2
   end
 
 end
