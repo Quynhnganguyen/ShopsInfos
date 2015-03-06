@@ -47,4 +47,3 @@ gem 'bootstrap-sass', '~> 3.3.3'
 
 # for maps
 gem 'geocoder'
-
