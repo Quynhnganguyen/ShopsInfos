@@ -19,15 +19,15 @@ pre {
   font-size: 11px;
 }
 
-a {
-  color: #000;
-  &:visited {
-    color: #555;
-  }
-  &:hover {
-    color: #fff;
-    background-color: #000;
-  }
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+a:hover,
+a:active {
+  outline: 0;
 }
 
 div {
